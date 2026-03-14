@@ -37,6 +37,8 @@
                 <div class="row">
                     <div class="about-col-1">
                         <img src="image/user.png">
+                        <img src="image/user2.jpg">
+
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
@@ -49,10 +51,77 @@
                             and learning opportunities where I can gain practical experience and grow in the tech field.
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links">Skills</p>
-                            <p class="tab-links">Education</p>
-                            <p class="tab-links">Certificates</p>
+                            <p class="tab-links active-links" onclick="opentab('skills', event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                            <p class="tab-links" onclick="opentab('certificate', event)">Certificates</p>
                         </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend</span><br>HTML5, CSS3, JavaScript</li>
+                                <li><span>Programming</span><br>C Language</li>
+                                <li><span>Database</span><br>MySQL</li>
+                                <li><span>Developer Tools</span><br>Git, GitHub, VS Code</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>BCA – Bachelor of Computer Application</span><br>
+                                    Mohanlal Sukhadia University (MLSU), Udaipur<br>
+                                    Jul 2025 – Present<br>
+                                    Relevant Skills: C, SQL
+                                </li>
+
+                                <li>
+                                    <span>Senior Secondary (Commerce)</span><br>
+                                    Jyotiba Phule Senior Secondary School, Jalore<br>
+                                    May 2023 – Jun 2025<br>
+                                    Grade: A
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="certificate">
+                            <ul class="certificate-list">
+                                <li>
+                                    <span>Microsoft</span><br>
+                                    Introduction to Prompt Engineering with GitHub Copilot<br>
+                                    <a href="https://simpli-web.app.link/e/7tK8IezlnYb" target="_blank">View
+                                        Certificate</a>
+                                </li>
+
+                                <li>
+                                    <span>C Programming</span><br>
+                                    Certification in C Language Fundamentals<br>
+                                    <a href="https://drive.google.com/file/d/1z14bFGHGzuuBm_oKo7rrOZfi2wBmkjcu/view?usp=drivesdk"
+                                        target="_blank">View Certificate</a>
+                                </li>
+
+                                <li>
+                                    <span>SQL Database</span><br>
+                                    Certification in MySQL and Database Basics<br>
+                                    <a href="https://www.hackerrank.com/certificates/cae1de24539b" target="_blank">View
+                                        Certificate</a>
+                                </li>
+
+                                <li>
+                                    <span>AI Workshop</span><br>
+                                    Learning AI Tools<br>
+                                    <a href="https://drive.google.com/file/d/1YZeiBVf72pssVglCkPH_O136UTnoZwiJ/view?usp=drivesdk"
+                                        target="_blank">View Certificate</a>
+                                </li>
+
+                                <li>
+                                    <span>Microsoft Power BI</span><br>
+                                    Analyzing and Visualizing Data with Microsoft Power BI<br>
+                                    <a href="https://drive.google.com/file/d/1XAk-QsQZVVN2hvpWiy_V9APQiFkQ2Rkd/view?usp=drivesdk"
+                                        target="_blank">View Certificate</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -61,7 +130,7 @@
 
     </main>
 
-
+<script src="script.js"></script>
 </body>
 
 </html>

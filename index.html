@@ -8,22 +8,25 @@
     <title>Portfolio Website</title>
 </head>
 
-<body>
-
-    <main>
+<body">
+    <main id="main">
+            <div id="cursor"></div>
         <div id="header">
             <img src="image/background.png" class="profile-img">
 
             <div class="container">
                 <nav>
                     <img src="image/logo.png" class="logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Cantact</a></li>
+
+                    <ul id="nav-links">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="ri-close-line" id="close"></i>
                     </ul>
+
+                    <i class="ri-menu-line" id="menu"></i>
                 </nav>
                 <div class="header-text">
                     <h1>Hello, I'm <span>Rahul Suthar</span></h1>
@@ -171,26 +174,62 @@
                 <div class="project-card frontend">
                     <h3>Quiz App</h3>
                     <p>The application allows users to create tasks and move.</p>
-                 <a href="https://github.com/rahulsuthar90243-stack/Quiz-app">Git Repo</a>
+                    <a href="https://github.com/rahulsuthar90243-stack/Quiz-app">Git Repo</a>
                 </div>
 
-                 <div class="project-card frontend">
+                <div class="project-card frontend">
                     <h3>Weather App</h3>
                     <p>real-time weather information using the OpenWeather API.</p>
-                 <a href="https://github.com/rahulsuthar90243-stack/Weather-App">Git Repo</a>
+                    <a href="https://github.com/rahulsuthar90243-stack/Weather-App">Git Repo</a>
                 </div>
 
                 <div class="project-card frontend">
                     <h3>ynthia Ugwu Portfolio Clone</h3>
                     <p>A modern portfolio website clone inspired by Cynthia Ugwu's official website..</p>
-                 <a href="https://github.com/rahulsuthar90243-stack/Cynthia-Ugwu-Project-Designer">Git Repo</a>
+                    <a href="https://github.com/rahulsuthar90243-stack/Cynthia-Ugwu-Project-Designer">Git Repo</a>
                 </div>
             </div>
 
         </section>
 
-    </main>
 
+        <!-- contact -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p class="send1"><i class="ri-send-plane-fill"></i>rsuthar34293@gmail.com</p>
+                        <p><i class="ri-send-plane-fill"></i>rahulsuthar90243@gmail.com</p>
+                        <p><i class="ri-phone-fill"></i>+91 9024303753</p>
+                        <div class="socail-icons">
+                            <a href=""><i class="ri-github-fill"></i></a>
+                            <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                        </div>
+                        <a href="image/RahulSuthar_InternshalaResume (2).pdf" download class="btn">Download Resume</a>
+
+                    </div>
+
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Nume" placeholder="Your Name">
+                            <input type="text" name="email" placeholder="Your Email">
+                            <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © Rahul.<i class="ri-heart-3-fill"></i> All rights reserved.</p>
+            </div>
+        </div>
+
+    </main>
     <script src="script.js"></script>
 </body>
 

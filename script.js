@@ -1,6 +1,16 @@
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 
+// custom cursor
+let main = document.querySelector("#main");
+let cursor = document.querySelector("#cursor");
+
+main.addEventListener("mousemove", (dets)=>{
+    cursor.style.left = dets.x+"px";
+    cursor.style.top = dets.y+"px";
+})
+
+
 function opentab(tabname, e) {
   for (let tablink of tablinks) {
     tablink.classList.remove("active-links");
@@ -65,3 +75,19 @@ function showC(){
     }
     })
 }
+
+
+let menu = document.getElementById("menu");
+let closeBtn = document.getElementById("close");
+let navLinks = document.getElementById("nav-links");
+
+menu.addEventListener("click", () => {
+    navLinks.style.right = "0";
+});
+
+closeBtn.addEventListener("click", () => {
+    navLinks.style.right = "-220px";
+});
+
+
+

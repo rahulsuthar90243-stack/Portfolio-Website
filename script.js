@@ -90,4 +90,29 @@ closeBtn.addEventListener("click", () => {
 });
 
 
+// ---contect form---
+document.addEventListener("DOMContentLoaded", function () {
 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwp3wkoNT695-KFrG5Bgk66f3Q1uowebrrCsXoAgl3NxInuCLjZ_2-Ld4pepdJ5_5Pw2w/exec'
+    const form = document.querySelector('form[name="submit-to-google-sheet"]')
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+
+        msg.innerHTML = "Sending..."
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(() => {
+            msg.innerHTML = "Message sent successfully "
+            setTimeout(() => msg.innerHTML = "", 5000)
+            form.reset()
+        })
+        .catch(() => {
+            msg.innerHTML = "Error sending message "
+        })
+    })
+})

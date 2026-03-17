@@ -242,8 +242,8 @@ nav ul li a:hover::after {
 
 .row {
     display: flex;
+    /* margin-left: 60px; */
     align-items: flex-start;
-    /* gap: 40px; */
 }
 
 .about-col-1 {
@@ -368,7 +368,6 @@ nav ul li a:hover::after {
 /* ----contect----- */
 .contact-left {
     flex-basis: 35%;
-    margin-left: 30px;
     height: 70vh;
 }
 
@@ -675,3 +674,8 @@ nav i {
 }
 
 
+#msg{
+    color: #61b752 ;
+    margin-top: 20px;
+    display: block;
+}
